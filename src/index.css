@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1, h2{
+  text-align: center
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+section {
+  width: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 50% ;
+}
+h2{
+  margin: 0 ;
+}
+
+ul li {
+  list-style:  none;
+  background-color: rgba(128, 128, 128, 0.295);
+  width: 100%;
+  padding: .5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+li .buttons{
+  display: flex;
+  gap: 1rem;
+}
+.buttons button {
+  padding: .1rem .5rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.buttons :nth-child(1) {
+  background-color: green;
+}
+.buttons :nth-child(2) {
+  background-color: red;
+}
